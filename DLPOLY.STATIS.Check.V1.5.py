@@ -127,7 +127,6 @@ for i in range(len(ExcludeList)):
 	if ExcludeList[i] == True:
 		DataPurga.append(Data[i])
 print('        Se consideran '+str(len(DataPurga))+' datos')
-print(DataPurga)
 
 ##################################################################################
 # Index de data a tomar
@@ -220,7 +219,7 @@ if QueryPlot == ''or QueryPlot == 'y':
 		plotx = []
 		for iLine in DataPurga:
 			plotx.append(iLine[1])
-		x_label = "time (ns)"
+		x_label = "time (ps)"
 
 	elif QuPlotX == "2":
 		plotx = []
